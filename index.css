@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+ :root{
+     font-family: 'Oxygen', sans-serif;
+     --main-color: black;
+ }
+
+
+ header .logo{
+    font-family: 'Raleway',monospace;
+    font-size: 3rem;
+    text-align: center;
+    margin: 24px auto;
+    font-weight: bold;
+}
+header .menu {
+    display: flex;
+   justify-content: space-around;
+    padding: 0px;
+}
+header .menu li{
+    list-style-type: none;
+}
+header .menu li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    
+}
+header .menu li a:hover{
+    text-decoration: underline;
+}
+@media (min-width: 600px) {
+    header nav{
+        display: flex;
+    }
+    header .logo{
+        margin: 24px 10px;
+    }
+    header nav .menu{
+        align-items:center;
+        flex: 1;
+    }
+    
+}
+
+#puzzles{
+    color:white;
+    border:14px;
+    border-color: black;
+}
+    #puzzles {
+      display: flex;
+      justify-content: space-around;
+      padding: 0px;
+}
+      #puzzles li{
+    list-style-type: none;
+}
+      #puzzles li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    
+}
+     #puzzles li a:hover{
+    text-decoration: underline;
+}.product-card {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+
+.product-card img {
+    display: block;
+    width: 100%;
+}
+
+.product-card .button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (min-width: 450px) {
+    
+    .product-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media (min-width: 660px) {
+    .product-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 880px) {
+    .product-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
