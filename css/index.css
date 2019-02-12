@@ -3,7 +3,6 @@
 
  :root{
      font-family: 'Oxygen', sans-serif;
-     --main-color: black;
  }
 
 
@@ -14,6 +13,7 @@
     margin: 24px auto;
     font-weight: bold;
 }
+
 header .menu {
     display: flex;
    justify-content: space-around;
@@ -24,12 +24,13 @@ header .menu li{
 }
 header .menu li a{
     text-decoration: none;
-    text-transform: uppercase;
-    color: var(--main-color);
+     text-transform: none;
+     color: black;
     
 }
 header .menu li a:hover{
-    text-decoration: underline;
+    
+    text-transform: uppercase
 }
 @media (min-width: 600px) {
     header nav{
@@ -44,7 +45,6 @@ header .menu li a:hover{
     }
     
 }
-
 
 .product-card {
     border: 1px solid black;
@@ -107,12 +107,12 @@ header .menu li a:hover{
      display: flex;
    justify-content: space-around;
     padding: 0px;
+    text-decoration: none;
     list-style-type: none;
-     text-transform: uppercase;
-       color: var(--main-color);
+       color: black;
 }
  .button-container a:hover{
-      text-decoration: underline;
+      text-transform: uppercase;
 }
 
  #contact{
