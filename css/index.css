@@ -2,10 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Oxygen');
 @import"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 
- :root{
-     font-family: 'Oxygen', sans-serif;
- }
 
+body{
+    max-width: 900px;
+    margin: auto;
+}
+  body:hover{
+      cursor: pointer;
+}
 
  header .logo{
     font-family: 'Raleway',monospace;
@@ -13,6 +17,10 @@
     text-align: center;
     margin: 24px auto;
     font-weight: bold;
+
+}
+header.logo:hover{
+     text-decoration: underline;
 }
 
 header .menu {
